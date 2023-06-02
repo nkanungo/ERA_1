@@ -44,15 +44,15 @@ The function first initializes empty lists to store the training losses and accu
 
 Inside the training loop, it performs the following steps for each batch of data:
 
-Moves the data and target tensors to the specified device.
-Resets the gradients of the optimizer.
-Performs a forward pass through the model to predict the output for the input data.
-Calculates the loss between the predicted output and the target using the specified loss function.
-Accumulates the training loss for the current batch.
-Computes gradients of the loss with respect to the model parameters.
-Updates the model parameters using the optimizer.
-Updates the number of correct predictions and the number of processed samples.
-Updates the progress bar description with the current loss and
+•	Moves the data and target tensors to the specified device.
+•	Resets the gradients of the optimizer.
+•	Performs a forward pass through the model to predict the output for the input data.
+•	Calculates the loss between the predicted output and the target using the specified loss function.
+•	Accumulates the training loss for the current batch.
+•	Computes gradients of the loss with respect to the model parameters.
+•	Updates the model parameters using the optimizer.
+•	Updates the number of correct predictions and the number of processed samples.
+•	Updates the progress bar description with the current loss
 
 **Test Method**
 
@@ -62,15 +62,15 @@ The function first initializes empty lists to store the test losses and accuraci
 
 Inside the evaluation loop, it performs the following steps for each batch of data:
 
-Moves the data and target tensors to the specified device.
-Performs a forward pass through the model to predict the output for the input data.
-Accumulates the test loss for the current batch using the specified loss function.
-Updates the number of correct predictions.
-After iterating over all batches, the function calculates the average test loss and test accuracy. It appends these values to the respective lists.
+•	Moves the data and target tensors to the specified device.
+•	Performs a forward pass through the model to predict the output for the input data.
+•	Accumulates the test loss for the current batch using the specified loss function.
+•	Updates the number of correct predictions.
+•	After iterating over all batches, the function calculates the average test loss and test accuracy. It appends these values to the respective lists.
+•	Finally, the function prints the evaluation results, including the average test loss and the accuracy percentage.
 
-Finally, the function prints the evaluation results, including the average test loss and the accuracy percentage.
 
-The Program trains and provide approximately 99.3% accuracy .
+The Program trains and provide approximately **99.3%** accuracy .
 
 **Parameters used by the code
 **
