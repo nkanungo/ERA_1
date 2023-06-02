@@ -74,6 +74,10 @@ The Program trains and provide approximately 99.3% accuracy .
 
 **Parameters used by the code
 **
+
+
+
+
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
 ================================================================
